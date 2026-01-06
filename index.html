@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil singkat Dimas aji pratama</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Lagi<span>Mood</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">Tentang</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#contact">Hubungi saya</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Halo semua, Perkenalkan saya <span class="highlight">Dimas Aji Pratama</span></h1>
+            <p>seorang siswa  & Graphic Designer</p>
+            <a href="#contact" class="btn">Hubungi Saya</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Tentang Saya</h2>
+        <p>Saya adalah seseorang yang sangat tertarik dengan dunia teknologi, khususnya pengembangan jaringan sosial. Saya senang mempelajari hal baru dan memecahkan masalah melalui pengamatan masalah itu sendiri, saya juga suka mendengarkan musik yang emnurut saya sesuai dengan mood saya.</p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Keahlian</h2>
+        <div class="skill-container">
+            <div class="skill-card">
+                <h3>HTML5</h3>
+                <p>Struktur website yang semantik dan rapi.</p>
+            </div>
+            <div class="skill-card">
+                <h3>PYTHON</h3>
+                <p>Memahami logika pemrograman dan struktur data serta menganalisis data tersebut.</p>
+            </div>
+            <div class="skill-card">
+                <h3>GRAPHIC DESIGN</h3>
+                <p>Membuat konten visual yang menarik dan kreatif.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Hubungi saya</h2>
+        <form id="contactForm">
+            <input type="text" placeholder="Nama Anda" required>
+            <input type="email" placeholder="Email Anda" required>
+            <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Dah dulu, babayyy</p>
+    </footer>
+
+    <script>
+        // Interaksi sederhana: Alert saat kirim pesan
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah terkirim.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
